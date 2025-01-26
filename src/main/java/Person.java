@@ -4,7 +4,6 @@ public class Person {
 
     private String name;
     private int age;
-
     private LocalDate birthday;
 
     public Person(String name, int age, LocalDate birthday) {
@@ -39,6 +38,7 @@ public class Person {
 
     public boolean isBirthdayToday() {
         LocalDate today = LocalDate.now();
-        return birthday.equals(today);
+        return birthday.getMonth() == today.getMonth() && birthday.getDayOfMonth() == today.getDayOfMonth();
     }
+
 }
