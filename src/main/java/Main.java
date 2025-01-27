@@ -31,13 +31,23 @@ public class Main {
 
         System.out.println(vehicle2.getMake());
         System.out.println(vehicle1.getYear());
-        vehicle2.setMake(vehicle2.getMake() + " Legendary");
+        vehicle2.setMake(vehicle2.getMake() + " Legendary " + vehicle2.getYear());
         vehicle1.setYear(vehicle1.getYear() - 1);
 
         System.out.println(vehicle1.getMake());
         System.out.println(vehicle2.getModel());
         System.out.println(vehicle2.getMake());
         System.out.println(vehicle1.getYear());
+
+        //Working with child class Sedan to parent class Vehicles
+        Sedan sedan = new Sedan("Nissan", 2000, "Kicks");
+        sedan.turnOn();
+        sedan.turnOff();
+
+        vehicle1.turnOn();
+        vehicle2.turnOff();
+
+
 
 
     }

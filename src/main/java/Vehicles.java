@@ -1,3 +1,5 @@
+import org.w3c.dom.ls.LSOutput;
+
 public class Vehicles {
     private String Make;
     private int Year;
@@ -9,6 +11,15 @@ public class Vehicles {
         Year = year;
         Model = model;
     }
+
+    public void turnOn() {
+        System.out.println(getMake() + " Vehicle turn on");
+    }
+
+    public void turnOff() {
+        System.out.println(getMake() + "Vehicle turn off");
+    }
+
 
     public int getYear() {
         return Year;
