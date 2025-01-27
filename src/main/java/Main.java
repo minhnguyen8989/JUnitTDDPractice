@@ -3,7 +3,9 @@ import java.time.LocalDate;
 public class Main {
     public static void main(String[] args) {
 
-        Person person = new Person("Minh Nguyen", 31, LocalDate.of(1993, 1, 25));
+        //Working with Person Class
+
+        Person person = new Person("Minh Nguyen", 31, LocalDate.of(1993, 1, 23));
 
 
         System.out.println("Name: " + person.getName());
@@ -17,7 +19,26 @@ public class Main {
         if (person.isBirthdayToday()) {
             System.out.println(person.getName() + "'s birthday is today!");
         } else {
-            System.out.println("not your birthday");
+            System.out.println("It is not your birthday today!" + person.getName());
         }
+
+
+        //Working with Vehicles Class
+
+
+        Vehicles vehicle1 = new Vehicles("Honda", 2020,"Civic");
+        Vehicles vehicle2 = new Vehicles("Toyota", 2010,"Camry");
+
+        System.out.println(vehicle2.getMake());
+        System.out.println(vehicle1.getYear());
+        vehicle2.setMake(vehicle2.getMake() + " Legendary");
+        vehicle1.setYear(vehicle1.getYear() - 1);
+
+        System.out.println(vehicle1.getMake());
+        System.out.println(vehicle2.getModel());
+        System.out.println(vehicle2.getMake());
+        System.out.println(vehicle1.getYear());
+
+
     }
 }

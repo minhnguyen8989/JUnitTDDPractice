@@ -37,11 +37,11 @@ public class JUnitTest {
     @Test
     public void testIsBirthdayToday_True() {
         // Arrange
-        Person instance = new Person("Minh nguyen", 31, LocalDate.of(1993,1,23));
-        instance.setBirthday(LocalDate.now()); // Set the birthday to today
+        Person person = new Person("Minh nguyen", 31, LocalDate.of(1993,1,25));
+        person.setBirthday(LocalDate.now()); // Set the birthday to today
 
         // Act
-        boolean result = instance.isBirthdayToday();
+        boolean result = person.isBirthdayToday();
 
         // Assert
         assertEquals(true, result, "Birthday should match today's date.");
