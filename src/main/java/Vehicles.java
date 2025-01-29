@@ -12,6 +12,10 @@ public class Vehicles {
         Model = model;
     }
 
+    public Vehicles() {
+
+    }
+
     public void turnOn() {
         System.out.println(getMake() + " Vehicle turn on");
     }

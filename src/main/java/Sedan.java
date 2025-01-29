@@ -4,6 +4,14 @@ public class Sedan extends Vehicles {
         super(make, year, model);
     }
 
+    public Sedan() {
+        super();
+    }
+
+    public Sedan(String ferrari) {
+
+    }
+
     @Override
     public void turnOn() {
         System.out.println(getMake() + " Sedan Turn On");

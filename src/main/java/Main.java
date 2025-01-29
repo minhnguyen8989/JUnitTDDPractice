@@ -23,7 +23,7 @@ public class Main {
         }
 
 
-        //Working with Vehicles Class
+        //Working with Vehicles Class encapsulation and inheritance
 
 
         Vehicles vehicle1 = new Vehicles("Honda", 2020,"Civic");
@@ -47,6 +47,10 @@ public class Main {
         vehicle1.turnOn();
         vehicle2.turnOff();
 
+        //Working with polymorphism
+
+        Vehicles myExotic = new Sedan("Ferrari");
+        myExotic.turnOff();
 
 
 
